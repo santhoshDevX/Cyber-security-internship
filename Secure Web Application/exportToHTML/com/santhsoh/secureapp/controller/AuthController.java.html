@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>AuthController.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #7a7e85;}
+.s4 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+AuthController.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com</span><span class="s2">.</span><span class="s1">santhsoh</span><span class="s2">.</span><span class="s1">secureapp</span><span class="s2">.</span><span class="s1">controller</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">org</span><span class="s2">.</span><span class="s1">springframework</span><span class="s2">.</span><span class="s1">stereotype</span><span class="s2">.</span><span class="s1">Controller</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">org</span><span class="s2">.</span><span class="s1">springframework</span><span class="s2">.</span><span class="s1">web</span><span class="s2">.</span><span class="s1">bind</span><span class="s2">.</span><span class="s1">annotation</span><span class="s2">.</span><span class="s1">GetMapping</span><span class="s2">;</span>
+
+<span class="s1">@Controller</span>
+<span class="s0">public class </span><span class="s1">AuthController </span><span class="s2">{</span>
+
+    <span class="s3">// Display custom login page</span>
+    <span class="s1">@GetMapping</span><span class="s2">(</span><span class="s4">&quot;/login&quot;</span><span class="s2">)</span>
+    <span class="s0">public </span><span class="s1">String showLoginPage</span><span class="s2">() {</span>
+        <span class="s0">return </span><span class="s4">&quot;login&quot;</span><span class="s2">; </span><span class="s3">// maps to login.html in templates folder</span>
+    <span class="s2">}</span>
+
+    <span class="s3">// Display registration page</span>
+    <span class="s1">@GetMapping</span><span class="s2">(</span><span class="s4">&quot;/register&quot;</span><span class="s2">)</span>
+    <span class="s0">public </span><span class="s1">String showRegisterPage</span><span class="s2">() {</span>
+        <span class="s0">return </span><span class="s4">&quot;register&quot;</span><span class="s2">; </span><span class="s3">// maps to register.html in templates folder</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>
